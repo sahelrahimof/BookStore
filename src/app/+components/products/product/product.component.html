@@ -1,0 +1,22 @@
+<div class="box">
+    <div class="image">
+        <img src="/images/{{product.pic}}">
+    </div>
+    <div class="title">
+        {{product.Title}}
+    </div>
+    <div class="author">
+        {{product.author}}
+    </div>
+    <div class="price">
+        <button (click)="buy(product)">
+            @if(action=='buy'){
+            add to list
+            }
+            @else {
+            remove from list
+            }
+        </button>
+        {{product.price}}
+    </div>
+</div>
