@@ -1,4 +1,4 @@
-import { Component, EventEmitter, Input, Output } from '@angular/core';
+import { Component, EventEmitter, input, Input, output, Output } from '@angular/core';
 
 @Component({
   selector: 'app-product',
@@ -7,10 +7,14 @@ import { Component, EventEmitter, Input, Output } from '@angular/core';
   styleUrl: './product.component.scss'
 })
 export class ProductComponent {
-  @Input() product: any;
+  // @Input() product: any;
+  product=input<{}>;
   @Output() onBuy=new EventEmitter<any>;
+  // onBuy=output<{}>;
   @Output() onRemove=new EventEmitter<any>;
+  // onRemove=output<{}>;
   @Input() action='buy';
+  // action=input<('buy')>;
 
   buy(p: any) {
     if(this.action=='buy')
