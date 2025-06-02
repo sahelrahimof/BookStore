@@ -7,8 +7,8 @@ import { Component, EventEmitter, input, Input, output, Output } from '@angular/
   styleUrl: './product.component.scss'
 })
 export class ProductComponent {
-  // @Input() product: any;
-  product=input<{}>;
+  @Input() product: any;
+  // product=input<{}>;
   @Output() onBuy=new EventEmitter<any>;
   // onBuy=output<{}>;
   @Output() onRemove=new EventEmitter<any>;

@@ -1,9 +1,11 @@
 <img>
+
 <div class="menu">
-<a routerLink="/home">Home</a>
-<a routerLink="/about">about</a>
-<a routerLink="/productss">products</a>
-<a routerLink="/login">login</a>
+<a [routerLink]="['./home']">Home</a>
+<a [routerLink]="['./about']">about</a>
+<a [routerLink]="['./publicbooks']">products</a>
+<a [routerLink]="['/login']">login</a> 
+<!-- loin isnt in the publicnav it is independent -->
 </div>
 <div class="secendmenu">
     <div class="book">books  |</div>

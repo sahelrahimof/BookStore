@@ -8,5 +8,6 @@ import { RouterLink } from '@angular/router';
   styleUrl: './menu.component.scss'
 })
 export class MenuComponent {
-
+  // menu :["home",'products','basket','about','login'] | undefined;
+  // categories:['Romanse','sience','fantasy','mystery',"Children's book"] |undefined;
 }
