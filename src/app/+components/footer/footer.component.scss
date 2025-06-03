@@ -1,4 +1,24 @@
-.footerbox{
+.footerbox {
     background-color: rgb(14, 20, 56);
     height: 20em;
+    margin-top: 50%;
+    //AI
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    justify-content: center;
+
+    //AI
+    div {
+        // display:inline-block;
+        color: aliceblue;
+        // margin-left:20em ;
+    margin-left: 2em;
+
+
+
+    }
+
+
 }

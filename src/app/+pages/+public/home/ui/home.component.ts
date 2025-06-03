@@ -6,7 +6,7 @@ import { PublicnavigationComponent } from '../../../../+navigations/publicnaviga
 
 @Component({
   selector: 'app-home',
-  imports: [HeaderComponent,FooterComponent],
+  imports: [],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'
 })

@@ -7,6 +7,9 @@ import { Component, EventEmitter, input, Input, output, Output } from '@angular/
   styleUrl: './product.component.scss'
 })
 export class ProductComponent {
+detailBooks() {
+throw new Error('Method not implemented.');
+}
   @Input() product: any;
   // product=input<{}>;
   @Output() onBuy=new EventEmitter<any>;

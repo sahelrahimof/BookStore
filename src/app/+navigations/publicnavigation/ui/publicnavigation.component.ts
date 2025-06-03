@@ -5,7 +5,7 @@ import { RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-publicnavigation',
-  imports: [RouterOutlet],
+  imports: [RouterOutlet, HeaderComponent, FooterComponent],
   templateUrl: './publicnavigation.component.html',
   styleUrl: './publicnavigation.component.scss'
 })

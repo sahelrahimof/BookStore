@@ -1,6 +1,7 @@
 <div class="box">
     <div class="image">
-        <img src="/images/{{product.pic}}">
+        <img (click)="detailBooks()" src="/images/{{product.pic}}">
+                                         <!-- come here  -->
     </div>
     <div class="title">
         {{product.Title}}
@@ -9,14 +10,20 @@
         {{product.author}}
     </div>
     <div class="price">
-        <button (click)="buy(product)">
+        <!-- <button (click)="buy(product)">
             @if(action=='buy'){
             add to list
             }
             @else {
             remove from list
             }
-        </button>
+        </button> -->
+<!-- butto on click and going to the new pae of each book
+ it goes with servieces an id
+ one compoent 
+ Url attached -->
+
+
         {{product.price}}
     </div>
 </div>

@@ -1,13 +1,15 @@
 <img>
 
 <div class="menu">
-<a [routerLink]="['./home']">Home</a>
-<a [routerLink]="['./about']">about</a>
-<a [routerLink]="['./publicbooks']">products</a>
+<a [routerLink]="['/public/home']">Home</a>
+<a [routerLink]="['/public/publicbooks']">products</a>
+<a [routerLink]="['/public/about']">about</a>
 <a [routerLink]="['/login']">login</a> 
-<!-- loin isnt in the publicnav it is independent -->
+<!-- login isnt in the publicnav it is independent -->
 </div>
 <div class="secendmenu">
     <div class="book">books  |</div>
     <a class="cat">Categories  ▾ </a>
+    <a class="cat">New and Trending ▾ </a>
+    <a class="cat">Best sellers  ▾ </a>
 </div>

@@ -22,9 +22,7 @@ remove($event: any) {
     { id: 101, brand: "NashrKome", Title: "Golestan", author: "saadishirazi", price: 1000, pic: "Gulistan.jpg" },
     { id: 102, brand: " ", Title: "mantiq-al-tayr", author: "Attar of Nishapur", price: 90, pic: "Mantiq-al-tair2.jpg" },
     { id: 103, brand: "NashrFerdos", Title: "Ghabosname", author: "onsor-al-maali", price: 500, pic: "ghabosname.jpg" },
-    { id: 103, brand: "NashrFerdos", Title: "Ghabosname", author: "onsor-al-maali", price: 500, pic: "ghabosname.jpg" },
-    { id: 103, brand: "NashrFerdos", Title: "Ghabosname", author: "onsor-al-maali", price: 500, pic: "ghabosname.jpg" },
-    { id: 103, brand: "NashrFerdos", Title: "Ghabosname", author: "onsor-al-maali", price: 500, pic: "ghabosname.jpg" }
+
   ];
   basket: any[] = [];
 
