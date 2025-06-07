@@ -9,7 +9,18 @@
 </div>
 <div class="secendmenu">
     <div class="book">books  |</div>
-    <a class="cat">Categories  ▾ </a>
-    <a class="cat">New and Trending ▾ </a>
-    <a class="cat">Best sellers  ▾ </a>
+    <div (click)="categories()" class="cat">
+    <a class="cat" >Categories  ▾ </a>
+    </div>
+    <a class="cat" href="#">New and Trending ▾ </a>
+    <a class="cat" href="#">Best sellers  ▾ </a>
 </div>
+
+<ul [class.hidden]="iscategoryvisible" class="categoriemenu">
+<li> romanse</li>
+<li> crime</li>
+<li> romanse</li>
+<li> history</li>
+
+
+</ul>

@@ -21,14 +21,27 @@
 
     }
 }
-.secendmenu{
+
+.secendmenu {
     border: 1px solid rgb(48, 47, 47);
     display: flex;
     flex-wrap: wrap;
-    .book{
+
+    .book {
         font-size: xx-large;
     }
-    .cat{
+
+    .cat {
         padding: 0.75em;
+
+        // :hover {
+            
+
+        // }
     }
 }
+
+.hidden {
+    display: none;
+}
+

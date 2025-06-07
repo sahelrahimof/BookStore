@@ -7,22 +7,37 @@ import { Component, EventEmitter, input, Input, output, Output } from '@angular/
   styleUrl: './product.component.scss'
 })
 export class ProductComponent {
-detailBooks() {
-throw new Error('Method not implemented.');
-}
+ isdetailvisible:boolean=true;
+  detailBooks() {
+    // this.ondetail.emit();
+    this.isdetailvisible=!this.isdetailvisible;
+    
+    
+  }
+  @Output() ondetail=new EventEmitter<any>;
+
+
+
+
+
+
+
+
+
+
   @Input() product: any;
   // product=input<{}>;
-  @Output() onBuy=new EventEmitter<any>;
+  @Output() onBuy = new EventEmitter<any>;
   // onBuy=output<{}>;
-  @Output() onRemove=new EventEmitter<any>;
+  @Output() onRemove = new EventEmitter<any>;
   // onRemove=output<{}>;
-  @Input() action='buy';
+  @Input() action = 'buy';
   // action=input<('buy')>;
 
   buy(p: any) {
-    if(this.action=='buy')
-    this.onBuy.emit(p);
-  else
-  this.onRemove.emit(p);
+    if (this.action == 'buy')
+      this.onBuy.emit(p);
+    else
+      this.onRemove.emit(p);
   }
 }
